@@ -11,7 +11,7 @@ public class RegisterDao {
 
 		try{  
 			Connection con=ConnectionProvider.getCon();  
-			PreparedStatement ps=con.prepareStatement("insert into user (username, email, password) values(?,?,?)");  
+			PreparedStatement ps=con.prepareStatement("insert into users (username, email, password) values(?,?,?)");  
 			ps.setString(1,u.getUname());  
 			ps.setString(2,u.getUemail());  
 			ps.setString(3,u.getUpass());  

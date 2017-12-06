@@ -11,7 +11,7 @@ public class UpdateRatingDao {
 
 		try{  
 			Connection con=ConnectionProvider.getCon();  
-			PreparedStatement ps=con.prepareStatement("UPDATE rentedBikes SET rating=? WHERE bikeId=?");  
+			PreparedStatement ps=con.prepareStatement("UPDATE rented_bikes SET rating=? WHERE bikeId=?");  
 			ps.setInt(1,r.getRatingInt());   
 			ps.setInt(2,r.getRatingId());
 			status=ps.executeUpdate();

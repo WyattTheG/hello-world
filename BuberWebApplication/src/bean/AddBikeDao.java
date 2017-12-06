@@ -12,7 +12,7 @@ public class AddBikeDao {
 		
 		try{  
 			Connection con=ConnectionProvider.getCon();  
-			PreparedStatement ps=con.prepareStatement("insert into bike (ownerName, ownerId, bikeId, price, rating, location) values(?,?,?,?,?,?)");  
+			PreparedStatement ps=con.prepareStatement("insert into all_bikes (ownerName, ownerId, bikeId, price, rating, location) values(?,?,?,?,?,?)");  
 			ps.setString(1,b.getOwnerName());
 			ps.setInt(2,b.getOwnerId());
 			ps.setInt(3,b.getBikeId());

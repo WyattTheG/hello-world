@@ -12,7 +12,7 @@ public class ConnectionProvider {
 		try{  
 
 			Class.forName(DRIVER);  
-			con=DriverManager.getConnection(CONNECTION_URL,USERNAME,PASSWORD);  
+			con=DriverManager.getConnection(CONNECTION_URL + DB_NAME,USERNAME,PASSWORD);  
 
 		}catch(Exception e){}  
 

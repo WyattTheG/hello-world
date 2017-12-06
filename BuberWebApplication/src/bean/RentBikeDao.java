@@ -11,7 +11,7 @@ public class RentBikeDao {
 
 		try{  
 			Connection con=ConnectionProvider.getCon();  
-			PreparedStatement ps=con.prepareStatement("insert into rentedBikes (ownerName, ownerId,bikeId, price, rating, location) SELECT ownerName, ownerId, bikeId, price, rating, location FROM bike WHERE bikeId=?");  
+			PreparedStatement ps=con.prepareStatement("insert into rented_bikes (ownerName, ownerId,bikeId, price, rating, location) SELECT ownerName, ownerId, bikeId, price, rating, location FROM bike WHERE bikeId=?");  
 			//ps.setDouble(1,b.getTimeIn());
 			//ps.setDouble(2,b.getTimeOut());
 			ps.setInt(1,b.getDesiredBikeId());

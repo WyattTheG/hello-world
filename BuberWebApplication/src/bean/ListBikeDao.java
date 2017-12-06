@@ -12,7 +12,7 @@ public class ListBikeDao {
 		
 		try{  
 			Connection con=ConnectionProvider.getCon();  
-			PreparedStatement ps=con.prepareStatement("SELECT * from bike");  
+			PreparedStatement ps=con.prepareStatement("SELECT * from all_bikes");  
 			
 			status=ps.executeUpdate();  
 
