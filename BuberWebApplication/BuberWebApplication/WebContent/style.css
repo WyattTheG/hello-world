@@ -1,0 +1,38 @@
+@CHARSET "UTF-8";
+
+title {
+    display: none;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    color: #FFA500;
+}
+
+h3 {
+  color: #FFA500;
+  font-family: 'Amatic SC', cursive;
+  font-size: 72px;
+  line-height: 60px;
+  padding: 20px 10px;
+  text-align: center;
+}
+
+form {
+	color: #0059FF;
+  	font-family: 'Amatic SC', cursive;
+  	font-size: 36px;
+}
+
+body {
+  background-color: #808080;
+  margin: 0;
+  padding: 0;
+}
+
